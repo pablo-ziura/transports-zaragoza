@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C198F022B1AA5A500F359C8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5C198F012B1AA5A500F359C8 /* Lottie */; };
+		5C198F052B1AA72700F359C8 /* Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C198F042B1AA72700F359C8 /* Animation.json */; };
+		5C198F072B1AA79100F359C8 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C198F062B1AA79100F359C8 /* LottieView.swift */; };
+		5C4158932B0CD69400D5C36A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4158922B0CD69400D5C36A /* StringExtensions.swift */; };
+		5C4158972B0CE6A300D5C36A /* BusLineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4158962B0CE6A300D5C36A /* BusLineDetailViewModel.swift */; };
+		5C5056B72B03F22200C64B4C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5056B62B03F22200C64B4C /* NetworkClient.swift */; };
+		5C5056B92B03F25C00C64B4C /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5056B82B03F25C00C64B4C /* URLSessionNetworkClient.swift */; };
+		5C5056BB2B03F28300C64B4C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5056BA2B03F28300C64B4C /* NetworkError.swift */; };
+		5C5056C02B03F3E000C64B4C /* LiveTramStopsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5056BF2B03F3E000C64B4C /* LiveTramStopsRemoteService.swift */; };
+		5C5056C22B03F94000C64B4C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5056C12B03F94000C64B4C /* Coordinator.swift */; };
+		5C5756D02B028F0000A8680E /* TransportZaragozaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5756CF2B028F0000A8680E /* TransportZaragozaApp.swift */; };
+		5C5756D22B028F0000A8680E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5756D12B028F0000A8680E /* ContentView.swift */; };
+		5C5756D42B028F0100A8680E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5756D32B028F0100A8680E /* Assets.xcassets */; };
+		5C5756D72B028F0100A8680E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5756D62B028F0100A8680E /* Preview Assets.xcassets */; };
+		5C5756DE2B028F3C00A8680E /* TramStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5756DD2B028F3C00A8680E /* TramStop.swift */; };
+		5C5756E02B02903D00A8680E /* TramStopsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5756DF2B02903D00A8680E /* TramStopsViewModel.swift */; };
+		5C5756E22B02914400A8680E /* TramStopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5756E12B02914400A8680E /* TramStopsView.swift */; };
+		5C5756E42B02A82B00A8680E /* TramStopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5756E32B02A82B00A8680E /* TramStopDetailView.swift */; };
+		5C77AAEE2B1CD3C800619F26 /* TramStopRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAED2B1CD3C800619F26 /* TramStopRowView.swift */; };
+		5C77AAF02B1CD61900619F26 /* TramStopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAEF2B1CD61900619F26 /* TramStopsRepository.swift */; };
+		5C77AAF42B1CD65D00619F26 /* UserDefaultsTramStopsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAF32B1CD65D00619F26 /* UserDefaultsTramStopsLocalService.swift */; };
+		5C77AAF72B1CE48400619F26 /* FavoriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAF62B1CE48400619F26 /* FavoriteListViewModel.swift */; };
+		5C77AAF92B1CE4A400619F26 /* FavoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAF82B1CE4A400619F26 /* FavoriteListView.swift */; };
+		5C77AAFB2B1CEDC400619F26 /* BusLineStopRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAFA2B1CEDC400619F26 /* BusLineStopRowView.swift */; };
+		5C77AAFD2B1D006300619F26 /* BusLineStopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77AAFC2B1D006300619F26 /* BusLineStopDetailView.swift */; };
+		5C77C8502B30FB7400DB06A1 /* BusStopsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77C84F2B30FB7400DB06A1 /* BusStopsRemoteService.swift */; };
+		5C77C8522B30FBA100DB06A1 /* BusStopsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77C8512B30FBA100DB06A1 /* BusStopsLocalService.swift */; };
+		5C77C8542B30FDC000DB06A1 /* TramStopsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77C8532B30FDC000DB06A1 /* TramStopsRemoteService.swift */; };
+		5C77C8562B30FE3200DB06A1 /* TramStopsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77C8552B30FE3200DB06A1 /* TramStopsLocalService.swift */; };
+		5C947A9E2B041F800014B176 /* BusLinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C947A9D2B041F800014B176 /* BusLinesViewModel.swift */; };
+		5C947AA02B041F900014B176 /* BusLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C947A9F2B041F900014B176 /* BusLinesView.swift */; };
+		5C9A3E7E2B05809000591BA4 /* LiveBusStopsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9A3E7D2B05809000591BA4 /* LiveBusStopsRemoteService.swift */; };
+		5CBAFCFA2B07C3BA00D6F013 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBAFCF92B07C3BA00D6F013 /* SplashScreenView.swift */; };
+		5CBAFCFF2B07C7A600D6F013 /* UserDefaultsBusStopsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBAFCFE2B07C7A600D6F013 /* UserDefaultsBusStopsLocalService.swift */; };
+		5CBAFD012B07D1C500D6F013 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBAFD002B07D1C500D6F013 /* SplashScreenViewModel.swift */; };
+		5CBAFD032B07D31800D6F013 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBAFD022B07D31800D6F013 /* BusStop.swift */; };
+		5CBAFD052B07DC3C00D6F013 /* BusStopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBAFD042B07DC3C00D6F013 /* BusStopsRepository.swift */; };
+		5CBBB3972B02BDFD009EB2BD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBBB3962B02BDFD009EB2BD /* APIResponse.swift */; };
+		5CC7246B2B0A976B001567B2 /* BusLineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7246A2B0A976B001567B2 /* BusLineDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C198F042B1AA72700F359C8 /* Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Animation.json; path = ../../../../../Downloads/Animation.json; sourceTree = "<group>"; };
+		5C198F062B1AA79100F359C8 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		5C4158922B0CD69400D5C36A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		5C4158962B0CE6A300D5C36A /* BusLineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLineDetailViewModel.swift; sourceTree = "<group>"; };
+		5C5056B62B03F22200C64B4C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		5C5056B82B03F25C00C64B4C /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
+		5C5056BA2B03F28300C64B4C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5C5056BF2B03F3E000C64B4C /* LiveTramStopsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTramStopsRemoteService.swift; sourceTree = "<group>"; };
+		5C5056C12B03F94000C64B4C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5C5756CC2B028F0000A8680E /* TransportZaragoza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportZaragoza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5756CF2B028F0000A8680E /* TransportZaragozaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportZaragozaApp.swift; sourceTree = "<group>"; };
+		5C5756D12B028F0000A8680E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C5756D32B028F0100A8680E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C5756D62B028F0100A8680E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C5756DD2B028F3C00A8680E /* TramStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStop.swift; sourceTree = "<group>"; };
+		5C5756DF2B02903D00A8680E /* TramStopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopsViewModel.swift; sourceTree = "<group>"; };
+		5C5756E12B02914400A8680E /* TramStopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopsView.swift; sourceTree = "<group>"; };
+		5C5756E32B02A82B00A8680E /* TramStopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopDetailView.swift; sourceTree = "<group>"; };
+		5C77AAED2B1CD3C800619F26 /* TramStopRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopRowView.swift; sourceTree = "<group>"; };
+		5C77AAEF2B1CD61900619F26 /* TramStopsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopsRepository.swift; sourceTree = "<group>"; };
+		5C77AAF32B1CD65D00619F26 /* UserDefaultsTramStopsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTramStopsLocalService.swift; sourceTree = "<group>"; };
+		5C77AAF62B1CE48400619F26 /* FavoriteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewModel.swift; sourceTree = "<group>"; };
+		5C77AAF82B1CE4A400619F26 /* FavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListView.swift; sourceTree = "<group>"; };
+		5C77AAFA2B1CEDC400619F26 /* BusLineStopRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLineStopRowView.swift; sourceTree = "<group>"; };
+		5C77AAFC2B1D006300619F26 /* BusLineStopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLineStopDetailView.swift; sourceTree = "<group>"; };
+		5C77C84F2B30FB7400DB06A1 /* BusStopsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopsRemoteService.swift; sourceTree = "<group>"; };
+		5C77C8512B30FBA100DB06A1 /* BusStopsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopsLocalService.swift; sourceTree = "<group>"; };
+		5C77C8532B30FDC000DB06A1 /* TramStopsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopsRemoteService.swift; sourceTree = "<group>"; };
+		5C77C8552B30FE3200DB06A1 /* TramStopsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopsLocalService.swift; sourceTree = "<group>"; };
+		5C947A9D2B041F800014B176 /* BusLinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLinesViewModel.swift; sourceTree = "<group>"; };
+		5C947A9F2B041F900014B176 /* BusLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLinesView.swift; sourceTree = "<group>"; };
+		5C9A3E7D2B05809000591BA4 /* LiveBusStopsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBusStopsRemoteService.swift; sourceTree = "<group>"; };
+		5CBAFCF92B07C3BA00D6F013 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		5CBAFCFE2B07C7A600D6F013 /* UserDefaultsBusStopsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBusStopsLocalService.swift; sourceTree = "<group>"; };
+		5CBAFD002B07D1C500D6F013 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		5CBAFD022B07D31800D6F013 /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		5CBAFD042B07DC3C00D6F013 /* BusStopsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopsRepository.swift; sourceTree = "<group>"; };
+		5CBBB3962B02BDFD009EB2BD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		5CC7246A2B0A976B001567B2 /* BusLineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLineDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C5756C92B028F0000A8680E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C198F022B1AA5A500F359C8 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C198F032B1AA5D900F359C8 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C198F042B1AA72700F359C8 /* Animation.json */,
+				5C198F062B1AA79100F359C8 /* LottieView.swift */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		5C4158912B0CD66E00D5C36A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C4158922B0CD69400D5C36A /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C5056B02B03F13E00C64B4C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5CBBB3962B02BDFD009EB2BD /* APIResponse.swift */,
+				5C5756DD2B028F3C00A8680E /* TramStop.swift */,
+				5CBAFD022B07D31800D6F013 /* BusStop.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5C5056B12B03F14900C64B4C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5CBAFCF82B07C3A300D6F013 /* SplashScreen */,
+				5C5056B52B03F1D500C64B4C /* TramStops */,
+				5C947A9C2B041F660014B176 /* BusLines */,
+				5C77AAF52B1CE44C00619F26 /* FavoritesList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5C5056B22B03F15100C64B4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C9A3E7C2B05807500591BA4 /* BusStops */,
+				5C5056BC2B03F31000C64B4C /* TramStops */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5C5056B32B03F18F00C64B4C /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				5C5056B62B03F22200C64B4C /* NetworkClient.swift */,
+				5C5056B82B03F25C00C64B4C /* URLSessionNetworkClient.swift */,
+				5C5056BA2B03F28300C64B4C /* NetworkError.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		5C5056B42B03F19A00C64B4C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5CBAFCFB2B07C6E500D6F013 /* Repositories */,
+				5C5056B22B03F15100C64B4C /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5C5056B52B03F1D500C64B4C /* TramStops */ = {
+			isa = PBXGroup;
+			children = (
+				5C5756DF2B02903D00A8680E /* TramStopsViewModel.swift */,
+				5C5756E12B02914400A8680E /* TramStopsView.swift */,
+				5C77AAED2B1CD3C800619F26 /* TramStopRowView.swift */,
+				5C5756E32B02A82B00A8680E /* TramStopDetailView.swift */,
+			);
+			path = TramStops;
+			sourceTree = "<group>";
+		};
+		5C5056BC2B03F31000C64B4C /* TramStops */ = {
+			isa = PBXGroup;
+			children = (
+				5C77AAF12B1CD63100619F26 /* Remote */,
+				5C77AAF22B1CD63700619F26 /* Local */,
+			);
+			path = TramStops;
+			sourceTree = "<group>";
+		};
+		5C5756C32B028F0000A8680E = {
+			isa = PBXGroup;
+			children = (
+				5C5756CE2B028F0000A8680E /* TransportZaragoza */,
+				5C5756CD2B028F0000A8680E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C5756CD2B028F0000A8680E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C5756CC2B028F0000A8680E /* TransportZaragoza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C5756CE2B028F0000A8680E /* TransportZaragoza */ = {
+			isa = PBXGroup;
+			children = (
+				5C198F032B1AA5D900F359C8 /* LottieFiles */,
+				5C4158912B0CD66E00D5C36A /* Extensions */,
+				5C5756D52B028F0100A8680E /* Preview Content */,
+				5C5056B32B03F18F00C64B4C /* NetworkClient */,
+				5C5056B42B03F19A00C64B4C /* Data */,
+				5C5056B12B03F14900C64B4C /* Features */,
+				5C5056B02B03F13E00C64B4C /* Entities */,
+				5C5756CF2B028F0000A8680E /* TransportZaragozaApp.swift */,
+				5C5056C12B03F94000C64B4C /* Coordinator.swift */,
+				5C5756D12B028F0000A8680E /* ContentView.swift */,
+				5C5756D32B028F0100A8680E /* Assets.xcassets */,
+			);
+			path = TransportZaragoza;
+			sourceTree = "<group>";
+		};
+		5C5756D52B028F0100A8680E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5C5756D62B028F0100A8680E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C77AAF12B1CD63100619F26 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				5C5056BF2B03F3E000C64B4C /* LiveTramStopsRemoteService.swift */,
+				5C77C8532B30FDC000DB06A1 /* TramStopsRemoteService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		5C77AAF22B1CD63700619F26 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				5C77AAF32B1CD65D00619F26 /* UserDefaultsTramStopsLocalService.swift */,
+				5C77C8552B30FE3200DB06A1 /* TramStopsLocalService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		5C77AAF52B1CE44C00619F26 /* FavoritesList */ = {
+			isa = PBXGroup;
+			children = (
+				5C77AAF62B1CE48400619F26 /* FavoriteListViewModel.swift */,
+				5C77AAF82B1CE4A400619F26 /* FavoriteListView.swift */,
+			);
+			path = FavoritesList;
+			sourceTree = "<group>";
+		};
+		5C947A9C2B041F660014B176 /* BusLines */ = {
+			isa = PBXGroup;
+			children = (
+				5C947A9D2B041F800014B176 /* BusLinesViewModel.swift */,
+				5C947A9F2B041F900014B176 /* BusLinesView.swift */,
+				5C4158962B0CE6A300D5C36A /* BusLineDetailViewModel.swift */,
+				5CC7246A2B0A976B001567B2 /* BusLineDetailView.swift */,
+				5C77AAFA2B1CEDC400619F26 /* BusLineStopRowView.swift */,
+				5C77AAFC2B1D006300619F26 /* BusLineStopDetailView.swift */,
+			);
+			path = BusLines;
+			sourceTree = "<group>";
+		};
+		5C9A3E7C2B05807500591BA4 /* BusStops */ = {
+			isa = PBXGroup;
+			children = (
+				5CBAFCFD2B07C70E00D6F013 /* Remote */,
+				5CBAFCFC2B07C6F400D6F013 /* Local */,
+			);
+			path = BusStops;
+			sourceTree = "<group>";
+		};
+		5CBAFCF82B07C3A300D6F013 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5CBAFCF92B07C3BA00D6F013 /* SplashScreenView.swift */,
+				5CBAFD002B07D1C500D6F013 /* SplashScreenViewModel.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		5CBAFCFB2B07C6E500D6F013 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5CBAFD042B07DC3C00D6F013 /* BusStopsRepository.swift */,
+				5C77AAEF2B1CD61900619F26 /* TramStopsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5CBAFCFC2B07C6F400D6F013 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				5CBAFCFE2B07C7A600D6F013 /* UserDefaultsBusStopsLocalService.swift */,
+				5C77C8512B30FBA100DB06A1 /* BusStopsLocalService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		5CBAFCFD2B07C70E00D6F013 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				5C9A3E7D2B05809000591BA4 /* LiveBusStopsRemoteService.swift */,
+				5C77C84F2B30FB7400DB06A1 /* BusStopsRemoteService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C5756CB2B028F0000A8680E /* TransportZaragoza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C5756DA2B028F0100A8680E /* Build configuration list for PBXNativeTarget "TransportZaragoza" */;
+			buildPhases = (
+				5C5756C82B028F0000A8680E /* Sources */,
+				5C5756C92B028F0000A8680E /* Frameworks */,
+				5C5756CA2B028F0000A8680E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransportZaragoza;
+			packageProductDependencies = (
+				5C198F012B1AA5A500F359C8 /* Lottie */,
+			);
+			productName = TransportZaragoza;
+			productReference = 5C5756CC2B028F0000A8680E /* TransportZaragoza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C5756C42B028F0000A8680E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5C5756CB2B028F0000A8680E = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5C5756C72B028F0000A8680E /* Build configuration list for PBXProject "TransportZaragoza" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C5756C32B028F0000A8680E;
+			packageReferences = (
+				5C198F002B1AA5A500F359C8 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = 5C5756CD2B028F0000A8680E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C5756CB2B028F0000A8680E /* TransportZaragoza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C5756CA2B028F0000A8680E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C198F052B1AA72700F359C8 /* Animation.json in Resources */,
+				5C5756D72B028F0100A8680E /* Preview Assets.xcassets in Resources */,
+				5C5756D42B028F0100A8680E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C5756C82B028F0000A8680E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBAFD032B07D31800D6F013 /* BusStop.swift in Sources */,
+				5CBAFD012B07D1C500D6F013 /* SplashScreenViewModel.swift in Sources */,
+				5C77AAF72B1CE48400619F26 /* FavoriteListViewModel.swift in Sources */,
+				5C947A9E2B041F800014B176 /* BusLinesViewModel.swift in Sources */,
+				5C77C8502B30FB7400DB06A1 /* BusStopsRemoteService.swift in Sources */,
+				5CBBB3972B02BDFD009EB2BD /* APIResponse.swift in Sources */,
+				5C5756E22B02914400A8680E /* TramStopsView.swift in Sources */,
+				5C5056C02B03F3E000C64B4C /* LiveTramStopsRemoteService.swift in Sources */,
+				5C5756E02B02903D00A8680E /* TramStopsViewModel.swift in Sources */,
+				5C77AAF42B1CD65D00619F26 /* UserDefaultsTramStopsLocalService.swift in Sources */,
+				5CC7246B2B0A976B001567B2 /* BusLineDetailView.swift in Sources */,
+				5C5756DE2B028F3C00A8680E /* TramStop.swift in Sources */,
+				5C5756D22B028F0000A8680E /* ContentView.swift in Sources */,
+				5C5756D02B028F0000A8680E /* TransportZaragozaApp.swift in Sources */,
+				5C5056BB2B03F28300C64B4C /* NetworkError.swift in Sources */,
+				5CBAFCFA2B07C3BA00D6F013 /* SplashScreenView.swift in Sources */,
+				5C77AAF92B1CE4A400619F26 /* FavoriteListView.swift in Sources */,
+				5C77AAFB2B1CEDC400619F26 /* BusLineStopRowView.swift in Sources */,
+				5C5056C22B03F94000C64B4C /* Coordinator.swift in Sources */,
+				5C5756E42B02A82B00A8680E /* TramStopDetailView.swift in Sources */,
+				5C947AA02B041F900014B176 /* BusLinesView.swift in Sources */,
+				5C77C8542B30FDC000DB06A1 /* TramStopsRemoteService.swift in Sources */,
+				5C4158932B0CD69400D5C36A /* StringExtensions.swift in Sources */,
+				5C5056B92B03F25C00C64B4C /* URLSessionNetworkClient.swift in Sources */,
+				5C4158972B0CE6A300D5C36A /* BusLineDetailViewModel.swift in Sources */,
+				5C77AAFD2B1D006300619F26 /* BusLineStopDetailView.swift in Sources */,
+				5C77AAEE2B1CD3C800619F26 /* TramStopRowView.swift in Sources */,
+				5C77C8562B30FE3200DB06A1 /* TramStopsLocalService.swift in Sources */,
+				5C5056B72B03F22200C64B4C /* NetworkClient.swift in Sources */,
+				5CBAFD052B07DC3C00D6F013 /* BusStopsRepository.swift in Sources */,
+				5C9A3E7E2B05809000591BA4 /* LiveBusStopsRemoteService.swift in Sources */,
+				5C77AAF02B1CD61900619F26 /* TramStopsRepository.swift in Sources */,
+				5C77C8522B30FBA100DB06A1 /* BusStopsLocalService.swift in Sources */,
+				5CBAFCFF2B07C7A600D6F013 /* UserDefaultsBusStopsLocalService.swift in Sources */,
+				5C198F072B1AA79100F359C8 /* LottieView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5C5756D82B028F0100A8680E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C5756D92B028F0100A8680E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C5756DB2B028F0100A8680E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TransportZaragoza/Preview Content\"";
+				DEVELOPMENT_TEAM = 4SD9GF7ZSL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.TransportZaragoza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C5756DC2B028F0100A8680E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TransportZaragoza/Preview Content\"";
+				DEVELOPMENT_TEAM = 4SD9GF7ZSL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.TransportZaragoza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C5756C72B028F0000A8680E /* Build configuration list for PBXProject "TransportZaragoza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5756D82B028F0100A8680E /* Debug */,
+				5C5756D92B028F0100A8680E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C5756DA2B028F0100A8680E /* Build configuration list for PBXNativeTarget "TransportZaragoza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5756DB2B028F0100A8680E /* Debug */,
+				5C5756DC2B028F0100A8680E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C198F002B1AA5A500F359C8 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C198F012B1AA5A500F359C8 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C198F002B1AA5A500F359C8 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5C5756C42B028F0000A8680E /* Project object */;
+}
