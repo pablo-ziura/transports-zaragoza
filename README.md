@@ -55,19 +55,10 @@ Estas herramientas y librerías se han seleccionado cuidadosamente para trabajar
 
 ## Instalación
 
-Sigue estos pasos para configurar el entorno de desarrollo y ejecutar la aplicación:
+Sigue estos pasos para descargar el proyecto y ejecutar la aplicación:
 
 ### Clona el repositorio de GitHub
 git clone https://github.com/pablo-ziura/transports-zaragoza.git
-
-### Navega al directorio del proyecto clonado
-cd ultimate-movie-database
-
-### Instala las dependencias del proyecto
-flutter pub get
-
-### Ejecuta la aplicación en modo de desarrollo
-flutter run
 
 ## Licencia
 
