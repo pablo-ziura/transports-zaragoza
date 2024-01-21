@@ -16,7 +16,7 @@ Este proyecto utiliza la [API del Ayuntamiento de Zaragoza](https://www.zaragoza
 
 ## Features
 
-- **Mapa Interactivo**: Visualiza las paradas de tranvía y las líneas de autobús en un mapa interactivo de Zaragoza. 
+- **Mapa Interactivo**: Visualiza las paradas de tranvía y las líneas de autobús en un mapa interactivo de Zaragoza.
 - **Tiempos de espera en tiempo real**: Consulta los tiempos de espera actualizados para cada parada de transporte público.
 - **Guarda tus Favoritos**: Marca tus paradas y líneas de autobús favoritas para acceder rápidamente a ellas.
 
@@ -78,7 +78,7 @@ Sigue estos pasos para clonar el proyecto y ejecutar la aplicación en tu entorn
 1. Abre la **Terminal** en tu Mac.
 2. Navega hasta el directorio donde deseas clonar el proyecto.
 3. Ejecuta el siguiente comando:
-   git clone https://github.com/pablo-ziura/transports-zaragoza.git
+   git clone <https://github.com/pablo-ziura/transports-zaragoza.git>
 4. Abre el proyecto en Xcode.
 5. Selecciona un simulador o dispositivo conectado.
 6. Ejecuta la aplicación con Cmd + R.
